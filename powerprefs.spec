@@ -12,6 +12,7 @@ BuildRequires:	gtk+-devel
 BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+ExclusiveArch:  ppc
 
 %define _localedir /usr/share/locale
 
