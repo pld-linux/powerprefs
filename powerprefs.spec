@@ -1,7 +1,7 @@
 Summary:	pbbuttonsd client that allows to adjust some options through a GTK user interface
 Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK
 Name:		powerprefs
-Version:	0.3.1
+Version:	0.4.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_pixmapsdir}/*
 %{_mandir}/man1/*
+%{_datadir}/%{name}/
