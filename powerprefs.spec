@@ -1,7 +1,7 @@
 Summary:	pbbuttonsd client that allows to adjust some options through a GTK user interface
 Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK
 Name:		powerprefs
-Version:	0.1.0
+Version:	0.3.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -9,11 +9,11 @@ Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{vers
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/powerprefs.html
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
+BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfdir	/etc/pbbuttons
-%define		_bindir		%{_sbindir}
+%define _localedir /usr/share/locale
 
 %description
 This client for pbbuttonsd makes some options easy adjustable through
@@ -52,20 +52,16 @@ interfejs u¿ytkownika oparty na GTK. Mo¿na ustaliæ:
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_sysconfdir},/etc/{rc.d/init.d,sysconfig},%{_mandir}/man8}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-#gzip -9nf NEWS TODO 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc conf/*.gz *.gz
-%attr(750,root,root) %dir %{_sysconfdir}
-%attr(640,root,root) %config(noreplace) %verify(not size md5 mtime) %{_sysconfdir}/*
-%attr(755,root,root) %{_sbindir}/*
-%attr(640,root,root) %config %verify(not size md5 mtime) /etc/sysconfig/*
-%{_mandir}/man8/*
+%doc AUTHORS BUGS ChangeLog INSTALL NEWS README TODO
+%attr(755,root,root) %{_bindir}/*
+%{_pixmapsdir}/*
+%{_localedir}/*
+%{_mandir}/man1/*
