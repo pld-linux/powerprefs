@@ -14,8 +14,6 @@ Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:  ppc
 
-%define _localedir /usr/share/locale
-
 %description
 This client for pbbuttonsd makes some options easy adjustable through
 a GTK user interface. Following options could directly be changed:
@@ -56,13 +54,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS BUGS ChangeLog INSTALL NEWS README TODO
+%doc AUTHORS BUGS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
-%{_localedir}/*
 %{_mandir}/man1/*
