@@ -45,7 +45,7 @@ interfejs u¿ytkownika oparty na GTK. Mo¿na ustaliæ:
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure
 
 %{__make}
