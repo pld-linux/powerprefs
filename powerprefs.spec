@@ -18,18 +18,18 @@ ExclusiveArch:	ppc
 %description
 This client for pbbuttonsd makes some options easy adjustable through
 a GTK+ user interface. Following options could directly be changed:
- * trackpad mode
-   How the trackpad is configured.
- * keyboard mode
-   How the keyboard is configured.
- * dosleep
-   switches sleepmode temporarly off, for eg. long term compiler runs.
- * snoozedelay
-   Should the snooze key react immediatly or delayed.
- * ejectdelay
-   Should the eject-CD key react immediatly or delayed.
- * mixerdelay
-   Should the sound routines be initalized on startup or later.
+- trackpad mode
+  How the trackpad is configured.
+- keyboard mode
+  How the keyboard is configured.
+- dosleep
+  switches sleepmode temporarly off, for eg. long term compiler runs.
+- snoozedelay
+  Should the snooze key react immediatly or delayed.
+- ejectdelay
+  Should the eject-CD key react immediatly or delayed.
+- mixerdelay
+  Should the sound routines be initalized on startup or later.
 
 %description -l pl
 Ten klient pbbuttonsd pozwala ³atwo zmieniæ niektóre opcje poprzez
