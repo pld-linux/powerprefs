@@ -1,5 +1,5 @@
-Summary:	pbbuttonsd client that allows to adjust some options through a GTK user interface
-Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK
+Summary:	pbbuttonsd client that allows to adjust some options through a GTK+ user interface
+Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK+
 Name:		powerprefs
 Version:	0.4.6
 Release:	0.1
@@ -17,7 +17,7 @@ ExclusiveArch:	ppc
 
 %description
 This client for pbbuttonsd makes some options easy adjustable through
-a GTK user interface. Following options could directly be changed:
+a GTK+ user interface. Following options could directly be changed:
  * trackpad mode
    How the trackpad is configured.
  * keyboard mode
@@ -33,7 +33,7 @@ a GTK user interface. Following options could directly be changed:
 
 %description -l pl
 Ten klient pbbuttonsd pozwala ³atwo zmieniæ niektóre opcje poprzez
-interfejs u¿ytkownika oparty na GTK. Mo¿na ustaliæ:
+interfejs u¿ytkownika oparty na GTK+. Mo¿na ustaliæ:
 - tryb trackpada
 - tryb klawiatury
 - czy komputer ma wchodziæ w tryb u¶pienia
