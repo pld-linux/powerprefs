@@ -12,8 +12,8 @@ BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
 BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:	ppc
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This client for pbbuttonsd makes some options easy adjustable through
@@ -53,7 +53,8 @@ interfejs u¿ytkownika oparty na GTK+. Mo¿na ustaliæ:
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
@@ -65,4 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS BUGS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
-%{_datadir}/%{name}/
+%{_datadir}/%{name}
