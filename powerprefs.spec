@@ -1,15 +1,16 @@
 Summary:	pbbuttonsd client that allows to adjust some options through a GTK+ user interface
 Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK+
 Name:		powerprefs
-Version:	0.4.6
+Version:	0.5.0
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/pbbuttons/%{name}-%{version}.tar.gz
-# Source0-md5:	6eddd3f35d3f89bf01549093995dbf90
+# Source0-md5:	d29c1aa01e4f47281abe7c8b921c591d
 URL:		http://pbbuttons.sourceforge.net/
 BuildRequires:	autoconf
-BuildRequires:	gtk+-devel
+BuildRequires:	automake
+BuildRequires:	gtk+2-devel
 BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
 ExclusiveArch:	ppc
@@ -45,10 +46,15 @@ interfejs u¿ytkownika oparty na GTK+. Mo¿na ustaliæ:
 %setup -q
 
 %build
+%{__aclocal}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
