@@ -1,5 +1,5 @@
 Summary:	pbbuttonsd client that allows to adjust some options through a GTK+ user interface
-Summary(pl):	Klient pbbuttonsd pozwalaj±cy zmieniæ niektóre opcje poprzez interfejs w GTK+
+Summary(pl.UTF-8):   Klient pbbuttonsd pozwalajÄ…cy zmieniÄ‡ niektÃ³re opcje poprzez interfejs w GTK+
 Name:		powerprefs
 Version:	0.5.0
 Release:	0.1
@@ -32,15 +32,15 @@ a GTK+ user interface. Following options could directly be changed:
 - mixerdelay
   Should the sound routines be initalized on startup or later.
 
-%description -l pl
-Ten klient pbbuttonsd pozwala ³atwo zmieniæ niektóre opcje poprzez
-interfejs u¿ytkownika oparty na GTK+. Mo¿na ustaliæ:
+%description -l pl.UTF-8
+Ten klient pbbuttonsd pozwala Å‚atwo zmieniÄ‡ niektÃ³re opcje poprzez
+interfejs uÅ¼ytkownika oparty na GTK+. MoÅ¼na ustaliÄ‡:
 - tryb trackpada
 - tryb klawiatury
-- czy komputer ma wchodziæ w tryb u¶pienia
-- czy usypanie przyciskiem ma byæ natychmiastowe, czy z opó¼nieniem
-- czy wysuwanie CD ma byæ natychmiastowe, czy z opó¼nieniem
-- czy d¼wiêk ma byæ inicjalizowany natychmiast po starcie, czy pó¼niej.
+- czy komputer ma wchodziÄ‡ w tryb uÅ›pienia
+- czy usypanie przyciskiem ma byÄ‡ natychmiastowe, czy z opÃ³Åºnieniem
+- czy wysuwanie CD ma byÄ‡ natychmiastowe, czy z opÃ³Åºnieniem
+- czy dÅºwiÄ™k ma byÄ‡ inicjalizowany natychmiast po starcie, czy pÃ³Åºniej.
 
 %prep
 %setup -q
