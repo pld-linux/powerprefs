@@ -1,5 +1,5 @@
 Summary:	pbbuttonsd client that allows to adjust some options through a GTK+ user interface
-Summary(pl.UTF-8):   Klient pbbuttonsd pozwalający zmienić niektóre opcje poprzez interfejs w GTK+
+Summary(pl.UTF-8):	Klient pbbuttonsd pozwalający zmienić niektóre opcje poprzez interfejs w GTK+
 Name:		powerprefs
 Version:	0.5.0
 Release:	0.1
